@@ -1,0 +1,286 @@
+body{
+  background: #889;
+
+}
+
+header{
+  height: 200px;
+  background: yellow;
+  font-size: 40px;
+  font-family:monospace;
+  line-height: 100px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+header h1,h3{
+  margin: 0px;
+}
+nav{
+  height: 50px;
+  background: yellow;
+  font-family: sans-serif;
+  line-height: 50px;
+  border-radius:10px;
+  text-align: center;
+  color: black;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-left: 80px;
+}
+
+nav ul li{
+  padding: 0 80px;
+  font-size: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  padding: 12px 20px;
+}
+
+nav ul li a:hover{
+  background-color: black;
+  color: white;
+  font-size: 22px;
+}
+
+.box{
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
+margin-bottom: 40px;
+
+}
+
+
+#intro{
+  width: 35%;
+  height:500px;
+  background-image: url('https://thedesignest.net/wp-content/uploads/2019/06/Brown-wooden-parquet-texture.jpg');
+  font-size: 32px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+
+  font-family:cursive;
+  box-shadow: 15px 15px #555;
+
+}
+
+#vdo iframe{
+  width: 800px;
+  height:500px;
+  border-radius:20px;
+  border: 5px solid yellow;
+  box-shadow: 15px 15px #666;
+}
+
+#ingredients{
+  width: 30%;
+  height:500px;
+  background-image: url('https://thedesignest.net/wp-content/uploads/2019/06/Brown-wooden-parquet-texture.jpg');
+  font-size: 33px;
+  border-radius: 20px;
+  font-family:cursive;
+  box-shadow: 15px 15px #666;
+  border: 5px solid yellow;
+
+}
+
+#ingredients h3, #process h3, #intro h3, #Result h3, #others h3, #note h3{
+  text-align: center;
+  background: yellow;
+  border-radius: 10px;
+}
+
+#ingredients ul:last-child, #process ul:last-child {
+  margin-left: 15px;
+}
+
+#process{
+  width:70%;
+  height:500px;
+  background-image: url('https://thedesignest.net/wp-content/uploads/2019/06/Brown-wooden-parquet-texture.jpg');
+  border-radius:20px;
+  border: 5px solid yellow;
+  box-shadow: 15px 15px #666;
+  font-size: 26px;
+  font-family:cursive;
+  margin-left: 30px;
+
+}
+
+#Result img{
+  margin-top:40px;
+  margin-left: 30px;
+  width: 400px;
+  height: 400px;
+  border: 2px solid yellow;
+  box-shadow: 15px 15px #666
+
+}
+
+#Result{
+font-size: 45px;
+font-family: monospace;
+letter-spacing: 55px;
+}
+
+#note{
+  width: 65%;
+  height:420px;
+  background-image: url('https://thedesignest.net/wp-content/uploads/2019/06/Brown-wooden-parquet-texture.jpg');
+  font-size: 32px;
+  text-align: center;
+  border-radius: 20px;
+  font-family:cursive;
+  border-radius:20px;
+  border: 5px solid yellow;
+  box-shadow: 15px 15px #666;
+
+
+}
+
+#others{
+  width:65%;
+  height:420px;
+  background-image: url('https://thedesignest.net/wp-content/uploads/2019/06/Brown-wooden-parquet-texture.jpg');
+  border-radius:20px;
+  border: 5px solid yellow;
+  box-shadow: 15px 15px #666;
+  font-size: 32px;
+  font-family:cursive;
+  margin-left: 20px;
+
+}
+
+#others ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+
+#others ul li a:hover{
+  color: black;
+  font-size: 35px;
+  background-color:yellow;
+
+}
+
+
+footer{
+  background: yellow;
+  font-style: oblique;
+  font-size: 25px;
+  height: 35px;
+  border-radius:20px;
+}
+
+@media screen and (max-width:400px) {
+  .box{
+    flex-flow: column;
+    flex-wrap: wrap-reverse;
+  }
+
+  header{
+    width: 100%;
+    height:auto;
+    line-height: normal;
+    font-size: 25px;
+  }
+  nav {
+    display: none;
+  }
+
+
+  #intro,#vdo iframe,#ingredients,#process,#Result img,#Result,#note,#others,footer{
+    width: 100%;
+    height:auto;
+    margin:auto;
+  }
+
+}
+
+@media screen and (min-width:401px ) and (max-width:750px) {
+  .box{
+    flex-flow: column;
+    flex-wrap: wrap-reverse;
+  }
+
+  header{
+    width: 100%;
+    height:auto;
+    font-size: 30px;
+  }
+
+  nav {
+    width:100%;
+  }
+  nav ul li{
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  nav ul li a{
+padding: 5px;
+  }
+
+
+  #intro,#vdo iframe,#ingredients,#process,#Result img,#Result,#note,#others,footer{
+    width: 100%;
+    height:auto;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media screen and (min-width:750px) and (max-width:1200px){
+
+
+  .box{
+    flex-flow: column;
+    flex-wrap: wrap-reverse;
+  }
+
+  header{
+    width: 100%;
+    height:auto;
+    font-size: 30px;
+  }
+
+  nav {
+    width:100%;
+  }
+  nav ul li{
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  nav ul li a{
+padding: 5px;
+  }
+
+
+  #intro,#vdo iframe,#ingredients,#process,#Result img,#Result,#note,#others,footer{
+    width: 100%;
+    height:auto;
+    margin-bottom: 20px;
+  }
+  #vdo iframe{
+    height: 400px;
+  }
+
+}
